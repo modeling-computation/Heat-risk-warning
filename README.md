@@ -217,19 +217,6 @@ CPU inference is sufficient for using the saved LSTM model. If GPU execution is 
 4. Restart the kernel before switching notebooks and execute cells in order, subject to the warning-notebook note below.
 5. Inspect the generated figures in `figure/`. Existing figures with matching output names will be overwritten.
 
-To check the working directory inside a notebook:
-
-```python
-from pathlib import Path
-print(Path.cwd())  # Should end with Heat-risk-warning/code (or the local repository's code folder).
-Path('../figure').mkdir(parents=True, exist_ok=True)
-```
-
-**Warning notebook execution note:** the current `Warning_comparison.ipynb` contains an unused placeholder cell, `data = pd.read_excel()`, without a file path. Skip that cell before running the remaining cells; the actual input files are loaded in the later “Observed and predicted data” section.
-
-The three notebooks can be used independently because `results/Model_result.xlsx` is already provided. Running the model-comparison notebook is not required before running the warning comparison.
-
-The repository provides trained models and result-analysis code. It does not include the complete model-training and hyperparameter-search pipeline.
 
 ## Data Sources
 
@@ -241,11 +228,6 @@ The study used information from:
 
 Source data remain subject to the applicable terms of their original providers.
 
-## Interpretation
-
-Future HRI projections are conditional on the climate scenarios, demographic assumptions, and fitted model.
-
-The shared models and outputs are intended for research and should not be used as a substitute for official public health guidance or warning systems.
 
 ## Citation
 
