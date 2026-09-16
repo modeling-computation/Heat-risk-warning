@@ -84,7 +84,6 @@ Candidate values for $\alpha$ and $\beta$ ranged from 0.1 to 1.0 in increments o
 | File | Contents |
 |---|---|
 | [Final_heat_region.xlsx](data/Final_heat_region.xlsx) | Regional HRI case counts, meteorological variables, and regional characteristics used by the analysis notebooks. |
-| [Final_heat_total.xlsx](data/Final_heat_total.xlsx) | Additional historical HRI and meteorological data, including `sido`, `sido_eng`, `date`, `case`, `death`, and `wbgt`. This file is not directly read by the three supplied notebooks. |
 
 Historical observations cover each year’s HRI surveillance period. The input workbook contains supporting columns beyond the 18 predictors selected by the model-comparison notebook.
 
