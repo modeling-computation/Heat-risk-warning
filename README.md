@@ -46,7 +46,7 @@ The models used 18 input features. Model-specific weighting coefficients and hyp
 
 The weighted WBGT index was calculated as:
 
-WBGT_weight,t = WBGT_t + α × WBGT_(t−1) + β × WBGT_(t−2)
+$WBGT_weight,t = WBGT_t + α × WBGT_(t−1) + β × WBGT_(t−2)$
 
 Candidate values for α and β ranged from 0.1 to 1.0 in increments of 0.1, subject to α ≥ β, yielding 55 combinations.
 
