@@ -1,0 +1,31 @@
+# Reference environment: Python 3.11.9.
+# Versions reflect the currently inspected local environment, not the original
+# GPU training environment. A clean-environment installation has not been tested.
+# Install with: python -m pip install -r requirements.txt
+# Recheck this list when the final public notebooks are added.
+
+# Numerical analysis and tabular data
+numpy==1.26.4
+pandas==2.1.4
+scipy==1.12.0
+
+# Figures and statistical analysis
+matplotlib==3.10.1
+seaborn==0.13.2
+statsmodels==0.14.4
+
+# Saved models and interpretation
+scikit-learn==1.6.1
+xgboost==3.0.2
+torch==2.5.1
+joblib==1.5.0
+shap==0.48.0
+
+# Excel input/output and notebook kernel
+openpyxl==3.1.5
+ipython==9.1.0
+ipykernel==6.29.5
+
+# Regional map panels in the hockey-stick/CI notebook
+geopandas==1.1.3
+shapely==2.1.2
