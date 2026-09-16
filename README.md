@@ -46,9 +46,9 @@ The models used 18 input features. Model-specific weighting coefficients and hyp
 
 The weighted WBGT index was calculated as:
 
-$WBGT_weight,t = WBGT_t + α × WBGT_(t−1) + β × WBGT_(t−2)$
+$WBGT_{weight,t} = WBGT_{t} + \alpha × WBGT_{t−1} + \beta × WBGT_{t−2}$
 
-Candidate values for α and β ranged from 0.1 to 1.0 in increments of 0.1, subject to α ≥ β, yielding 55 combinations.
+Candidate values for $\alpha$ and $\beta$ ranged from 0.1 to 1.0 in increments of 0.1.
 
 ## Data
 
@@ -68,8 +68,6 @@ Future input data cover 2024–2070 under:
 These inputs include meteorological variables, derived heat-exposure indicators, and regional characteristics.
 
 Regional demographic projections were used through 2052. Values for 2053–2070 were extrapolated using region-specific linear trends estimated from the 2043–2052 projections. The baseline applied the full estimated trends.
-
-Sensitivity analyses under SSP2-4.5 varied the post-2052 slopes for total population, population aged ≥60 years, and the proportion of older adults living alone by −20%, −10%, +10%, and +20%.
 
 ## Results
 
