@@ -14,6 +14,7 @@ The shared materials support inspection of model outputs and reproduction of sel
 Heat-risk-warning/
 ├── README.md
 ├── requirements.txt
+├── previous/                  # Archived files from the earlier repository version
 ├── code/
 │   ├── Model_comparison.ipynb
 │   ├── Warning_comparison.ipynb
@@ -48,6 +49,8 @@ Heat-risk-warning/
 ```
 
 The tree lists the currently supplied files. Rerunning `Model_comparison.ipynb` saves its regional figure as `Model_comparison_regional.jpg`; the supplied regional image is named `Model_comparison.jpg`.
+
+The `previous/` folder preserves the earlier notebooks, data, and model files in their original relative directory structure. These are archived materials, not the revised analysis files described below.
 
 ## Study Design
 
