@@ -100,8 +100,6 @@ Future input data cover 2024–2070. Input and result files are paired as follow
 
 These inputs include meteorological variables, derived heat-exposure indicators, and regional characteristics.
 
-The inputs use one row per region and date. The consecutive-exposure variable is named `con` in the SSP files and `cons` in the historical model feature list; align these names before passing future inputs to a model.
-
 Regional demographic projections were used through 2052. Values for 2053–2070 were extrapolated using region-specific linear trends estimated from the 2043–2052 projections. The baseline applied the full estimated trends.
 
 ## Results
