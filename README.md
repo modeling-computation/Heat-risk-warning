@@ -74,14 +74,7 @@ Candidate values for $\alpha$ and $\beta$ ranged from 0.1 to 1.0 in increments o
 
 ### SSP Scenario Inputs
 
-Future input data cover 2024–2070 and include meteorological variables, derived heat-exposure indicators, and regional characteristics.
-
-| Scenario | Input data | Predicted HRI cases |
-|---|---|---|
-| SSP1-2.6 | [Final_SSP126.csv](data/Final_SSP126.csv) | [SSP126_result.csv](results/SSP126_result.csv) |
-| SSP2-4.5 | [Final_SSP245.csv](data/Final_SSP245.csv) | [SSP245_result.csv](results/SSP245_result.csv) |
-| SSP3-7.0 | [Final_SSP370.csv](data/Final_SSP370.csv) | [SSP370_result.csv](results/SSP370_result.csv) |
-| SSP5-8.5 | [Final_SSP585.csv](data/Final_SSP585.csv) | [SSP585_result.csv](results/SSP585_result.csv) |
+`Final_SSP126.csv`, `Final_SSP245.csv`, `Final_SSP370.csv`, and `Final_SSP585.csv` cover 2024–2070 for SSP1-2.6, SSP2-4.5, SSP3-7.0, and SSP5-8.5, respectively. They include meteorological variables, derived heat-exposure indicators, and regional characteristics.
 
 Regional demographic projections were used through 2052. Values for 2053–2070 were extrapolated using region-specific linear trends estimated from the 2043–2052 projections.
 
@@ -103,8 +96,16 @@ Predictions are continuous-valued and are not rounded to integer counts. Predict
 
 ### Future HRI Projections
 
-Each `SSP*_result.csv` holds LSTM-based projections for 2024–2070 in wide format: `date`, one prediction column per region, `year`, `Korea` (the summed prediction across study regions), and `date2` (month-day).
+LSTM-based HRI projections for 2024–2070 under each scenario:
 
+| Scenario | Predicted HRI cases |
+|---|---|
+| SSP1-2.6 | [SSP126_result.csv](results/SSP126_result.csv) |
+| SSP2-4.5 | [SSP245_result.csv](results/SSP245_result.csv) |
+| SSP3-7.0 | [SSP370_result.csv](results/SSP370_result.csv) |
+| SSP5-8.5 | [SSP585_result.csv](results/SSP585_result.csv) |
+
+Each file uses a wide format: `date`, one prediction column per region, `year`, `Korea` (the summed prediction across study regions), and `date2` (month-day).
 ### Parameter Selection
 
 | File | Contents |
